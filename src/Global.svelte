@@ -58,12 +58,22 @@
   /** Default template used to showcase different metrics */
   export const exampleTemplate: Template = {
     metrics: [
-      { name: "Toggle", type: "toggle", group: "Group" },
-      { name: "Number", type: "number" },
-      { name: "Select", type: "select", values: ["Value 1", "Value 2", "Value 3"] },
-      { name: "Text", type: "text", tip: "Tip" },
-      { name: "Rating", type: "rating" },
-      { name: "Timer", type: "timer" },
+      // { name: "Toggle", type: "toggle", group: "Group" },
+      // { name: "Number", type: "number" },
+      // { name: "Select", type: "select", values: ["Value 1", "Value 2", "Value 3"] },
+      // { name: "Text", type: "text", tip: "Tip" },
+      // { name: "Rating", type: "rating" },
+      // { name: "Timer", type: "timer" },
+      { name: "Upper Scored", type: "number", group: "Auto"},
+      { name: "Lower Scored", type: "number"},
+      { name: "Taxi", type: "toggle"},
+      { name: "Upper Scored", type: "number", group: "Teleop"},
+      { name: "Lower Scored", type: "number"},
+      { name: "Climb", type: "select", values: ["Not attempted", "Low", "Mid", "High", "Traversal", "Failed"], group: "Endgame"},
+      { name: "Playstyle", type: "select", values: ["Unknown", "Offensive", "Defensive", "Mixed"], group: "Misc"},
+      { name: "Driver Skill", type: "rating" },
+      { name: "Swerve Drive", type: "toggle"},
+      { name: "Comments", type: "text"}
     ],
   };
 
