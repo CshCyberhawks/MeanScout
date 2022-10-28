@@ -71,9 +71,10 @@
       { name: "Upper Scored", type: "number", group: "Teleop"},
       { name: "Lower Scored", type: "number"},
       { name: "Climb", type: "select", values: ["Not attempted", "Low", "Mid", "High", "Traversal", "Failed"], group: "Endgame"},
+      { name: "Swerve Drive", type: "toggle", group: "Robot"},
+      { name: "Gimbaled Shooter", type: "toggle"},
       { name: "Playstyle", type: "select", values: ["Unknown", "Offensive", "Defensive", "Mixed"], group: "Misc"},
       { name: "Driver Skill", type: "rating" },
-      { name: "Swerve Drive", type: "toggle"},
       { name: "Comments", type: "paragraph"}
     ],
   };
