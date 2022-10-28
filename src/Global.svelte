@@ -10,7 +10,7 @@
   export type Location = typeof locations[number];
 
   /** List of metric types */
-  export const metricTypes = ["toggle", "number", "select", "text", "rating", "timer"] as const;
+  export const metricTypes = ["toggle", "number", "select", "text", "rating", "timer", "paragraph"] as const;
   export type MetricType = typeof metricTypes[number];
 
   type BaseMetric = {
@@ -24,6 +24,7 @@
     | { type: "number" }
     | { type: "select"; values: string[] }
     | { type: "text"; tip?: string }
+    | { type: "paragrah"; tip?: string }
     | { type: "rating" }
     | { type: "timer" };
 
@@ -73,7 +74,7 @@
       { name: "Playstyle", type: "select", values: ["Unknown", "Offensive", "Defensive", "Mixed"], group: "Misc"},
       { name: "Driver Skill", type: "rating" },
       { name: "Swerve Drive", type: "toggle"},
-      { name: "Comments", type: "text"}
+      { name: "Comments", type: "paragraph"}
     ],
   };
 

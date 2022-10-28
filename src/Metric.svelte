@@ -52,6 +52,12 @@
   }
 </script>
 
+<style>
+  textarea {
+    color: red
+  }
+</style>
+
 {#if group}
   <span class="group">{group}</span>
 {/if}
@@ -74,6 +80,8 @@
       </select>
     {:else if type == "text"}
       <input placeholder={tip} bind:value />
+      {:else if type == "paragraph"}
+        <textarea placeholder={tip} cols="50" rows="5" style="resize: none" bind:value />
     {:else if type == "rating"}
       {#each [...Array(5).keys()] as i}
         <IconButton on:click={() => (value = i)} icon={value >= i ? "star" : "nostar"} />
