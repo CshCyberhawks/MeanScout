@@ -81,10 +81,8 @@
       { name: "Charging Station", type: "toggle", group: "Teleop"},
       { name: "Playstyle", type: "select", values: ["Unknown", "Offensive", "Defensive", "Mixed"], group: "Teleop"},
       { name: "Convicted Felons", type: "number", group: "Safety"},
-      { name: "CPR Certified", type: "number", group: "Safety"},
       { name: "Robot Allergies", type: "text", group: "Safety"},
       { name: "Robot Sentience", type: "toggle", group: "Safety"},
-      { name: "Blood Type", type: "text", group: "safety"},
       { name: "Comments", type: "text"}
     ],
   };
