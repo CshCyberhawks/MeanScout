@@ -71,6 +71,7 @@
       { name: "Height", type: "number", group: "Misc"},
       { name: "Race", type: "text", group: "Misc"},
       { name: "Pronouns", type: "text", group: "Misc"},
+      { name: "Eligible for Food Stamps", type: "toggle", group: "Misc"},
       { name: "Taxi", type: "toggle", group: "Auto"},
       { name: "Top Points", type: "number", group: "Auto"},
       { name: "Middle Points", type: "number", group: "Auto"},
