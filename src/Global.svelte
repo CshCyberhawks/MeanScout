@@ -22,9 +22,9 @@
   type UniqueMetric =
     | { type: "toggle" }
     | { type: "number" }
+    | { type: "paragraph"; tip?: string }
     | { type: "select"; values: string[] }
     | { type: "text"; tip?: string }
-    | { type: "paragrah"; tip?: string }
     | { type: "rating" }
     | { type: "timer" };
 
@@ -65,24 +65,19 @@
       // { name: "Text", type: "text", tip: "Tip" },
       // { name: "Rating", type: "rating" },
       // { name: "Timer", type: "timer" },
-      { name: "Drive System", type: "text", group: "Misc"},
-      { name: "Intake System", type: "text", group: "Misc"},
-      { name: "Placement System", type: "text", group: "Misc"},
-      { name: "Weight", type: "text", group: "Misc"},
-      { name: "Height", type: "text", group: "Misc"},
-      { name: "Race", type: "text", group: "Misc"},
-      { name: "Pronouns", type: "text", group: "Misc"},
-      { name: "Robot Eligible for Food Stamps", type: "toggle", group: "Misc"},
-      { name: "Top Points", type: "toggle", group: "Misc"},
-      { name: "Middle Points", type: "toggle", group: "Misc"},
-      { name: "Bottom Points", type: "toggle", group: "Misc"},
-      { name: "Robot Zodiac Sign", type: "text", group: "Misc"},
-      { name: "Taxi", type: "toggle", group: "Auto"},
-      { name: "Charging Station", type: "toggle", group: "Teleop"},
-      { name: "Playstyle", type: "select", values: ["Unknown", "Offensive", "Defensive", "Mixed"], group: "Teleop"},
-      { name: "Convicted Felons", type: "number", group: "Safety"},
-      { name: "Robot Allergies", type: "text", group: "Safety"},
-      { name: "Robot Sentience", type: "toggle", group: "Safety"},
+      { name: "Upper Scored", type: "number", group: "Auto"},
+      { name: "Middle Scored", type: "number"},
+      { name: "Lower Scored", type: "number"},
+      { name: "Taxi", type: "toggle"},
+      { name: "Balance", type: "toggle"},
+      { name: "Upper Scored", type: "number", group: "Teleop"},
+      { name: "Middle Scored", type: "number"},
+      { name: "Lower Scored", type: "number"},
+      { name: "Balance", type: "toggle"},
+      { name: "Playstyle", type: "select", values: ["Unknown", "Offensive", "Defensive", "Mixed"], group: "Misc"},
+      { name: "Preferred Target", type: "select", values: ["Unknown", "Upper", "Middle", "Lower"]},
+      { name: "Driver Skill", type: "rating" },
+      { name: "Swerve Drive", type: "toggle"},
       { name: "Comments", type: "text"}
     ],
   };
